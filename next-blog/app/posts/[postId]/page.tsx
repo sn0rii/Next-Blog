@@ -3,7 +3,7 @@ import { getPostData, getSortedPostsData } from "@/lib/post";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-export function generateStaticParam() {
+export function generateStaticParams() {
   const posts = getSortedPostsData();
 
   return posts.map((post) => ({
